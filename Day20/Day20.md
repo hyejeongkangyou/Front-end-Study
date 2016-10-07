@@ -9,6 +9,7 @@
 * iframe요소에 `top: 0; width: 100%; height: 100%;`
 * 부모 컨테이너 요소에는 `height: 0; padding-bottom: 스크린비율`
 
+-
 
 #### 미디어 쿼리
 
@@ -53,5 +54,7 @@
 @media all and (max-aspect-ratio:5/4) { … } 
 // 뷰포트 너비가 5/4 비율 이하면 실행
 ```
+-
+##### 참고  
 
 [CSS 미디어쿼리 이해](http://naradesign.net/wp/2012/05/30/1823/)
