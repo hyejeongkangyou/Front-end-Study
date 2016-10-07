@@ -1,0 +1,24 @@
+/* box-model.css */
+/*마진이 상하 방향으로 접혀지는 현상*/
+h1{
+	font-weight:bolder; /*하위 호환 고려*/
+	font-weight:900;
+	/*100 - 400(normal) - 700(bold) - 900(bolder)*/
+	font-size: 2.2em;
+	margin-bottom: 1.88em;
+}
+p{
+	color:#323130;
+	font-size:0.875em; /*14px*/
+	margin-top:20px;
+}
+p a{
+	background: #000;	
+	color:#fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+p span{
+	background:#f00;
+	color:#ff0;
+}

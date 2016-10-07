@@ -1,0 +1,43 @@
+
+/*.page*/
+
+.page{
+/*	width:50%;
+	width:50vw;/*viewport width*/
+	/*width:auto;*/
+	/*height:100vh;*/
+	/*vh? = viewport height*/
+	background: #7045cf;
+	height:333px;
+	width:500px;
+	margin:100px;
+	padding-top: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.print-class-attr::before{
+	display:block;
+	content:attr(data-name);
+	color:#fff;
+	font-size: 1.375rem;
+}
+
+/*.inner-page*/
+.inner-page{
+	background-color:#f3a647;
+	height:111px;
+	width:250px;
+}
+
+.inner-page::before{
+	font-size:0.997rem;
+}
+
+/*margin 속기형(Short Properties)*/
+
+p{
+	margin-top:1em;
+	margin-bottom:1em;
+	margin-right:1em;
+	margin-left:1em;
+}

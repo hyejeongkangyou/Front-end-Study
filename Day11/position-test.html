@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Position text</title>
+	<style>
+
+	.box-container{
+		width:500px;
+		height: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.box-red{
+		margin-bottom: 20px;
+		height: 100px;
+		width: 100px;
+		position: relative;
+		bottom: 30px;
+		right: 50px;
+		border: 1px solid red;
+	}
+	.box-yellow{
+		margin-bottom: 20px;
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top: 18px;
+		left: 24px;
+		border: 1px solid yellow;
+
+	}
+
+	.box-blue{
+		height: 100px;
+		width: 100px;
+	/*	position: fixed;
+		top:18px;
+		left:24px;*/
+		border: 1px solid blue;
+	}
+
+
+	.box111{
+		width:0;
+		height:0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 1.5rem solid black;
+		border-left: 10px solid transparent;
+	}
+	</style>
+</head>
+<body>
+<div class="box-container">
+	<div class="box-red">Box1</div>
+	<div class="box-yellow">Box2</div>
+	<div class="box-blue">Box3</div>
+	<div class="box111"></div>
+</div>
+</body>
+</html>

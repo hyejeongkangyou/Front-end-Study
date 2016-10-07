@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-transform</title>
+<style>
+.center-box{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:200px;
+	height:180px;
+	border: 2px solid red;
+
+	/*transform은 자신의 위치에서 움직이기 때문에 position을 통해 만들어진 위치에서 이동하게 되어 사이즈가 
+	변하는 경우에도 그 자리를 유지할 수 있다.*/
+	transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+	<div class="center-box"></div>
+</body>
+</html>
+
+

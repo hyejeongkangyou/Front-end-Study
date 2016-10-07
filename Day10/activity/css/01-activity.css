@@ -1,0 +1,120 @@
+/*초기화*/
+body{
+	margin:0;
+
+}
+
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.speakers-container{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speakers-container *{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* height:auto는 이미지 폭에 따라 비율유지가 자동설정된다.
+그림이 찌그러지지 않음
+width값을 50%로 주는 이유는 글과 그림의 비율이 50:50이기 
+때문이다; */
+.speaker-photo{
+	float:left;
+	width:50%;
+	height:auto;
+	z-index:-1;
+}
+
+.speaker{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.speaker:hover{
+	background:#fff2e2
+}
+
+.layout-half{
+	width:50%;
+}
+
+.align-right{
+	float:right;
+}
+
+.speaker-bio{
+	overflow:hidden;
+}
+
+.speaker-bio:hover::after{
+	z-index:1;
+	display:block;
+	width:0;
+	height:0;
+	top: 60%;
+	left: -2.5rem;
+	border-left: 2.5rem solid #fff2e2;
+	border-top: 2rem solid transparent;
+	border-bottom: 2rem solid transparent;
+
+}
+
+
+.speaker-name{
+	margin-top:2.4375em;
+	margin-bottom:1.125em;
+	font-family:"Montserrat";
+	line-height:1.1;
+	font-size:19px;
+}
+
+.speaker-desc{
+	font-family:"Open sans";
+	
+
+}
+
+.speaker-bio .speaker-desc::after{
+	display:block;
+	content:'';
+	height: 1px;
+	width: 3em;
+	margin: 0.8125em 69%;
+	background: #464646;
+}
+
+.speaker-bio-right .speaker-desc::after{
+	display:block;
+	content:'';
+	height: 1px;
+	width: 3em;
+	margin: 0.8125em 18%;
+	background: #464646;
+}
+
+.speaker-bio a{
+	display: block;
+	width: 1.25em;
+	height:1.25em;
+	margin-left:74%;
+	background: url("../images/icon-twitter.svg") no-repeat;
+	background-size: contain;
+}
+
+.speaker-bio-right a{
+	display: block;
+	width: 1.25em;
+	height:1.25em;
+	margin-left:25%;
+	background: url("../images/icon-twitter.svg") no-repeat;
+	background-size: contain;
+}
+
+

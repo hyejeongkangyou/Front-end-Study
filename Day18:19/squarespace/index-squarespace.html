@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Squarespace</title>
+	<link rel="stylesheet" href="../resources/initialization/normalize.css">
+	<link rel="stylesheet" href="../resources/initialization/common.css">
+	<link rel="stylesheet" href="../resources/grid-system/grid-static-1280-8.css">
+<style>
+	body{
+		margin:0;
+		position: relative;
+		
+	}
+
+	.page-nav{
+		position:absolute;
+		width: 1280px;
+		height: 100vh;
+		background: url("images/hero-desktop.jpg") no-repeat;
+		background-size: cover;
+		
+	}
+	
+	.page-logo{
+		width: 170px;
+		height: 70px;
+		position: absolute;
+		top: 40px;
+		left: 50px;
+	}
+
+	ul.pages-info{
+		margin-top: 40px;
+		margin-bottom: 0;
+		padding-left: 300px;
+	}
+
+	.pages-info ul{
+		float: left;
+		margin-left: 100px;
+
+	}
+	.pages-info li{
+		float: left;
+		margin-left: 40px;
+		list-style: none;
+	}
+
+	.pages-info a:hover,
+	.pages-info a:focus{
+		border-bottom:3px solid yellow;
+	}
+
+	.pages-info a:hover::after,
+	.pages-info a:focus::after{
+
+	}
+
+
+	.pages-info a{
+		text-decoration: none;
+		padding-bottom: 0.125rem;
+		border-bottom-width: 0.0625rem solid;
+		color: #fff;
+		width: 50px;
+		height: 50px;
+	}
+
+	.button-login{
+		width: 120px;
+		height: 40px;
+		position: absolute;
+		top: 30px;
+		right: 85px;
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	
+	
+
+
+
+</style>
+
+
+</head>
+<body>
+	
+	<section class="page-nav">
+		<nav class="site-navigation">
+		<span class="page-logo">
+		<a href="index-squarespace.html"><img src="images/logo.svg"></a>
+		</span>
+			<ul class="pages-info clearfix reset-list">
+				<li class="page-domain"><a href="domain-squarespace.html">DOMAIN</a></li>
+				<li class="page-website"><a href="website-squarespace.html">WEBSITE</a></li>
+				<li class="page-store"><a href="store-squarespace.html">ONLINE STORES</a></li>
+			</ul>
+			<button type="button" class="button-login">Login</button>
+		</nav>
+		
+
+</body>
+</html>

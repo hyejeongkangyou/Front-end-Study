@@ -1,0 +1,41 @@
+div *{
+	border:1px solid brown;
+}
+
+.daum-body{
+	width: 960px;
+	height: 768px;
+}
+.clearfix::after{
+	display:block;
+	content:'';
+	clear:both;
+}
+
+.header-contianer{
+	float: left;
+	width: 940px;
+	height: 48px;
+}
+
+.header-app{
+	width:80px;
+	height: 48px;
+	float: left;
+}
+
+.header-nav{
+	width: 620px;
+	height: 48px;
+	float: right;
+}
+
+.daum-logo{
+	width:140px;
+	height: 72px;
+}
+
+.daum-search{
+	width:440px;
+	height:72px;
+}

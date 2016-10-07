@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>HTML Form 디자인</title>
+    <style>
+        .register input{
+            text-indent: 10px;
+        }
+
+        textarea{
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="#" method="GET" name="register-form">
+       
+       
+       <fieldset class="register">
+          <legend>필수 입력</legend>
+           <div>
+            <label for="register-id">ID</label>
+            <input id="register-id" type="text" value="user name" disabled maxlength="10">
+            <!--<input id="register-id" type="text" placeholder="frontend" maxlength="10">-->
+            </div>
+                     
+      <!--  <div>
+            <label>ID<input type="text" name="register-id"></label>
+            <label>PASSWORD<input type="text" name="register-password"></label>
+            </div>    -->
+        
+        <div>
+            <label for="register-email">E-mail</lable>
+            <input type="email" id="register-email" placeholder="user@email.com">
+            
+        </div>
+        
+        
+        <div>
+        <lable for="regsiter-password">PASSWORD</label>
+        <input id="register-password" type="password">
+        </div>
+        
+        </fieldset>
+        
+        <div>
+          <h3>Gender</h3>
+          
+           <!--명시적 label 사용법-->
+            <!--name값이 같아야 둘 중에 하나를 선택할 수 있다-->
+            <!--<label for="register-user-gender">gender</label>-->
+            <input id="register-male" type="radio" name="register-gender-a-type">
+            <label for="reguster-male">Male</label>
+            <input checked id="register-female" type="radio" name="register-gender-a-type">
+            <label for="reguster-female">Female</label>
+            
+           <!-- <label><input type="radio" name="register-gender">Male</label>
+            <label><input type="radio" name="register-gender">Female</label>-->
+        </div>
+        
+        <div>
+            <!--암묵적 label 사용법 (더 선호함)-->
+            <label><input name="register-gender-b-type" value="1" type="radio">Male</label>
+            <label><input name="register-gender-b-type" value="2" type="radio">Female</label>
+        </div>
+        
+
+        <!--<input type="submit" value="전송"> value에 있는 값이 출력된다
+            <button type="submit"><img src="" alt="">전송</button>-->
+            
+            
+        <div>
+            <h3>Hobby</h3>
+            
+            <ul>
+            <!--input:checkbox + tab을 누르면 <input type="checkbox" name="" id="">이렇게 나옴-->
+            <!--<li><label><input type="checkbox" name="register-hobby">Sleeping</lable></li>여기에 checked를 쓰면 그 택에 체크가 되어 시작된다-->
+                <li><label><input type="checkbox" name="register-hobby">Reading a book</label></li>
+                <li><label><input type="checkbox" name="register-hobby" checked>Sleeping</label></li>
+                <li><label><input type="checkbox" name="register-hobby">Watching movies</label></li>
+            </ul>
+
+        </div>    
+        
+        
+        <div>
+            <label for="register-upload">File</label>
+            <input multiple type="file" id="register-upload" name="register-upload">
+            <!--<label>file<input multiple type="file" name="register-upload"></label>-->
+        </div>
+        
+        <hr>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+        <hr>
+        
+        <div>
+          <!--<option value="Student" selected>Student</option> 여기에서와 같이 Selected를 기입하면 그 부분이 선택되어져 보이게 된다.(위의 checked와 같은 기능)-->
+           <h3>Your Job</h3>
+            <select name="register-job">
+            <option value="">Select Your Job</option>
+            
+             <optgroup label="web">
+            <option value="Developer">Developer</option>
+            <option value="Planner">Planner</option>
+            <option value="Designer">Designer</option>
+            </optgroup>
+            
+            <option value="Instructor">Instructor</option>
+            <option value="Student">Student</option>
+            <option value="Doctor">Doctor</option>
+            </select>
+        </div>
+        
+        <input type="submit" value="전송">
+        <button type="reset">초기화</button>
+        <!--or <input type="reset" value="초기화">도 가능-->
+    </form>
+    
+</body>
+
+</html>

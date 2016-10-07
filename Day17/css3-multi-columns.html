@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS3 멀티 컬럼 레이아웃 디자인</title>
+	<link rel="stylesheet" href="../resources/initialization/normalize.css">
+	<link rel="stylesheet" href="../resources/webfonts/SpoqaHanSans-kr.css">
+	<link rel="stylesheet" href="../resources/grid-system/grid-fluid(flexable).css">
+	<style>
+
+	.column-container{
+		max-width: 56.25rem;
+		margin: 3rem auto;
+	}
+
+	.column-container::after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+
+	.column{
+	/*	box-sizing: border-box;
+		float:left;
+		width: 33.3333%;*/
+		padding-right: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.column:last-child{
+		padding-right:0;
+	}
+	
+	.column p{
+		margin-bottom: 1.5rem;
+	}
+
+	.no-multi-columns{
+		background: #e2e2e2;
+	}
+
+	.use-multi-columns{
+		line-height: 1.5;
+		color: #6c6045;
+		/* CSS Multi Columns */
+		/* 컬럼 개수 */
+		-webkit-column-count:3;
+		-moz-column-count:3;
+		column-count:3;
+		/* 컬럼 사이 간격(GAP) */
+		-webkit-column-gap:1.5rem;
+		-moz-column-gap: 1.5rem;
+		column-gap:1.5rem;
+		/* 컬럼 사이 간격의 중앙에 배치되는 수직 선 */
+		-webkit-column-rule:1px solid #b7b4ab;
+		-moz-column-rule: 1px solid #b7b4ab;
+		column-rule: 1px dashed #b7b4ab;
+	}
+
+	.use-multi-columns p{
+		margin-top:0;
+		margin-bottom: 1.5rem;
+		text-align: justify;
+		letter-spacing: -0.045em; /* 자간 */
+		word-spacing: 0.18em; /* 어간 */
+	}
+
+
+	.use-multi-columns h2{
+		margin-top: 0;
+		font-size: 2em;
+		line-height: 1.2;
+		font-weight: 100;
+		/* 제목을 columns 위로 뺴 낸다.*/
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+	}
+	</style>
+
+</head>
+<body>
+
+	<div class="column-container no-multi-columns">
+		<!-- p*6>lorem70 -->
+	<!-- 	<div class="column"> -->
+		<div class="unit-1-2 column">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, asperiores sint ut iusto est laborum voluptatum cum dolore! Animi quisquam architecto deserunt ratione perspiciatis totam eaque tempore officiis? Dignissimos laborum dolore perferendis possimus sit dolorum magnam! Dolorem mollitia ratione, excepturi officiis obcaecati cupiditate in veritatis. Voluptate libero eaque facere aliquam esse fuga, ipsum voluptatem illum adipisci voluptatibus molestiae iusto! Minima officia saepe corrupti, reprehenderit itaque aspernatur odio hic nobis placeat.</p>
+		<p>Numquam suscipit voluptatem vel nostrum eos, quis voluptate. Totam aperiam, voluptatibus nesciunt numquam unde. Dolorum ipsum atque nostrum corporis vero, libero, quam adipisci tempore harum laboriosam amet necessitatibus quia vel totam et, officia eum sunt dignissimos iure! Doloremque dolores, deserunt distinctio dolore minima, porro officia! Odit omnis dolore repudiandae saepe aspernatur adipisci aliquam odio quia nam, neque, non, officia ratione nihil sapiente eum earum maxime assumenda nostrum est voluptatem natus.</p>
+		</div>
+
+		<div class="unit-1-2 column">
+		<!-- <div class="column"> -->
+		<p>Quasi ipsam ducimus soluta quae autem dicta cum deleniti cupiditate, iure, repudiandae quo. Soluta aspernatur provident eligendi laborum quibusdam, architecto, voluptatibus, est quidem eveniet aperiam rem ipsum iste. Beatae magnam numquam quidem nesciunt, voluptates, qui iure odio consequatur veritatis illum vel ab, porro nostrum aliquam voluptate sunt eius consectetur sed laborum dolor. Incidunt ut eius odio enim ducimus id, ab saepe, vitae expedita vel qui veniam sint inventore similique excepturi.</p>
+		<p>Architecto, blanditiis, facere mollitia hic placeat minus quod dolor error voluptatibus, quo animi illum est nihil qui quis incidunt aliquid laborum delectus ipsum illo eius! Iure nemo explicabo tempore, nobis atque voluptas nesciunt, impedit. Laudantium molestiae, maxime quaerat neque autem facere necessitatibus ullam, explicabo adipisci hic ratione architecto accusamus animi dicta ipsa quo esse quod! Quae enim, rerum voluptate eius, est expedita numquam hic, eos cupiditate voluptatibus voluptas quos obcaecati!</p>
+		</div>
+
+		<div class="unit-1-3 column">
+		<!-- <div class="column"> -->
+		<p>Laborum, ipsum, at. Deleniti quis voluptates ex fugit quae, omnis in possimus esse sequi, ipsa aut ratione laborum debitis sit eius facilis pariatur quod repellat minus commodi quasi, quam dolore amet tenetur. Voluptatum animi quam eius, corporis id natus dolorum eos temporibus cumque fuga pariatur harum ullam. A asperiores doloremque mollitia, enim impedit harum, hic voluptatibus quos repellat, iusto natus iure minima! Sunt ab, eveniet veritatis inventore veniam libero rerum?</p>
+		<p>Ducimus autem non dolores veritatis rerum laborum enim, dignissimos quo repellat mollitia quia, recusandae cupiditate ratione natus unde optio, eum, tenetur architecto est amet! Deserunt reiciendis eligendi sed fugiat illo expedita unde natus laboriosam dolore labore cum, aliquid quod eius saepe qui dolorem quos illum tempore quidem possimus. Itaque accusantium ratione perspiciatis dolor optio illo cumque dignissimos velit deleniti cum consectetur eveniet nisi, quas perferendis ipsa quaerat soluta ab iste.</p>
+		</div>
+	</div>
+
+	<div class="column-container use-multi-columns">
+		<!-- p*6>lorem70 -->
+		<h2>orem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+		<div class="column">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo omnis, et facere ullam velit inventore tempora voluptates nisi aperiam sit nulla sint, praesentium odit! Dolorum nemo, deserunt possimus molestias, beatae magni iste eligendi laborum aperiam nesciunt voluptatibus in laudantium suscipit voluptas praesentium eos temporibus iusto ratione dicta animi tempora fuga aliquam? Sed, pariatur dolore consequuntur laboriosam earum iusto quod soluta cupiditate ad cumque corporis quos quia recusandae, fugit nemo. lorem20</p>
+		<p>Doloremque placeat beatae nostrum amet ab doloribus ipsum, architecto neque quod expedita alias nihil aliquam, quia consectetur. Voluptates et eos officia quae perferendis veniam earum molestias. Soluta excepturi facilis placeat a dignissimos debitis incidunt ut adipisci, rerum sequi, quia molestias quod consectetur? Eum, deleniti assumenda voluptate minima nemo expedita. Assumenda aperiam eum perspiciatis, tenetur amet. Commodi asperiores temporibus officia magnam voluptatem obcaecati consequatur eos, molestias itaque minus sequi et voluptatum.</p>
+		</div>
+
+		<div class="column">
+		<p>Impedit dolores distinctio veniam quo quisquam vitae expedita quam laudantium dolorum, iusto vel aperiam tempora cumque dolore excepturi repudiandae culpa asperiores delectus alias ullam repellat quas libero voluptatibus. Sint itaque ipsum saepe quisquam, officia dolorum pariatur quasi deserunt ipsa quibusdam, tempora. Corrupti sint pariatur dolorum? Nostrum debitis iure eius cumque minima, eveniet voluptates voluptatibus, eos architecto nobis, non sunt repudiandae rem facere cupiditate suscipit accusantium ipsam totam illum distinctio consectetur.</p>
+		<p>Minus ex ipsa voluptates temporibus. Sunt molestias, beatae, rem et voluptatibus dolorem cupiditate maiores repellat blanditiis dolore suscipit aliquam accusamus iste dolorum mollitia sint tenetur laudantium minima ea obcaecati, impedit expedita delectus, autem hic. Sit qui itaque et quam. Blanditiis explicabo incidunt recusandae ullam veniam minima autem iste rerum quisquam quasi cum animi adipisci esse molestiae reprehenderit tenetur, quae illo. Ab esse dolor officia voluptatum provident odit cupiditate aliquid quos.</p>
+		</div>
+
+		<div class="column">
+		<p>Quod debitis, beatae ipsa nostrum ipsum a soluta iure corrupti esse, aut cum incidunt natus tenetur quisquam recusandae praesentium architecto dolorum. Illo iure, laboriosam consequatur facere quasi. Quis adipisci voluptates totam facere iusto voluptatibus id, quas voluptas quae repudiandae iste aut, ea magni exercitationem repellendus voluptatem obcaecati, omnis sed deserunt, culpa vitae. Architecto itaque, deserunt facilis earum sint labore quasi doloribus eaque, accusamus officiis, quibusdam debitis molestiae natus nobis? Consequuntur?</p>
+		<p>Reiciendis quae inventore, in dolor cupiditate ducimus rerum saepe iure iste illo, quas qui doloremque et sed, quo illum minima provident tenetur. Nam, omnis, eveniet. Sapiente a perspiciatis qui quia sunt tenetur optio, numquam saepe quis et, maiores aliquid iusto necessitatibus architecto debitis iure ratione quos doloremque reiciendis eum quisquam. Ad rem nulla soluta amet suscipit modi incidunt, velit tempore a inventore qui officiis corporis iusto illo, aut. Eum, necessitatibus!</p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

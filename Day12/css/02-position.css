@@ -1,0 +1,60 @@
+html{
+	height:100vh;
+	background-image: radial-gradient(ellipse, #a20f7a 0%, #dad6d9 95%);
+}
+
+
+body{
+	margin:0;
+}
+
+.button-set {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 326px;
+	padding: 0.1em;
+	border-radius: 30px;
+	background: #e8b1d9;
+	transform: translate(-50%, -50%);
+	/*box-shadow: 5px 5px 25px 20px #a96cb0;*/
+	box-shadow: 5px 5px 30px #dbd9d9;
+}
+
+
+.button-set [class*="button-"]{
+	cursor: pointer;
+	float: left;
+	border: none;
+	padding: 1em 3em;
+	background: #e8b1d9;
+	color: #6a6a6a;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.button-set [class*="button-"]:hover,
+.button-set [class*="button-"]:focus{
+	color: #4a4a4a;
+	background: #f3daed;
+	background: linear-gradient(#fff, transparent 50%);
+	box-shadow: inset 0 -6px 10px #f9d4ef;
+}
+
+.button-set [class*="button-"]:focus{
+	outline:none;
+}
+
+.button-set [class*="button-"]:first-child{
+	border-radius: 20px 0 0 20px;
+	border-right: 1px solid #f9ccf5;
+}
+
+.button-set [class*="button-"]:last-child{
+	border-radius: 0 20px 20px 0;
+	border-left: 1px solid #f9ccf5;
+}
+
+.button-set [class*="button-"] .fa{
+	margin-right: 0.4em;
+}

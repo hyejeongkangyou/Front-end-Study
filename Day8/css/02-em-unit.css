@@ -1,0 +1,80 @@
+/*em 단위 사용의 어려움*/
+html{
+	font-size:100%; /*16px*/
+}
+
+
+/*
+* 미디어 기술 사용
+* CSS3 미디어쿼리 @media 환경 and 조건1 and 조건2
+* 중단점(Breakpoint) 설계(Design)
+*--1-- 600 --2-- 1000 --3--
+*/
+
+/*IE 6-8*/
+/*@media screen{}*/
+/*IE 6-8 (X) */
+/*@media only screen{}*/
+
+
+/*media 쿼리에서는 defaul값이 언제나 16px이다.*/
+@media only screen and (max-width: 37.5em){
+	body::before{
+		content: '스크린의 폭이 600px보다 작습니다.';
+	}
+}
+
+@media only screen and (min-width: 37.56em) and (max-width: 62.5em){
+	body::before{
+		content: '스크린의 폭이 600px보다 크고 1000px보다 작습니다.';
+	}
+}
+
+@media only screen and (min-width: 62.56em){
+	body::before{
+		content: '스크린의 폭이 1000px보다 큽니다.';
+	}
+
+}
+	
+	
+
+body{
+	font-size:87.5%; /*14px*/
+}
+
+
+div{
+	width:60%;
+	margin-left:auto;
+	margin-top: 30px;
+	margin-right: auto;
+	border:1px dashed #fff;
+	padding:5%;
+	color:#fff;
+}
+.wrapper-parent{
+	background:#7045cf;
+	font-size:40px;
+	/*1em ===14px*/
+	font-size:2.5em; /*  14*2.5== 35px  */
+	font-size:2.5rem; /* 14*2.5== 35px  */
+}
+.parent{
+	background: #724fb7;
+	font-size:30px
+	font-size:1.88em;
+	font-size:1.88rem;
+}
+.child{
+	background: #9077c4;
+	font-size:20px;
+	font-size:1.25em;
+	font-size:1.25rem;
+}
+.inner-child{
+	background: #60a6c4;
+	font-size:10px;
+	font-size:0.63em;
+	font-size:0.63rem;
+}

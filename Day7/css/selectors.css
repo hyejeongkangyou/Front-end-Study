@@ -1,0 +1,234 @@
+@charset="utf-8"
+/*@import url("./common.css")
+*/
+body{
+	line-height:1.6;
+	margin:20%;
+}
+/*
+*속성선택자
+*[attr]
+*[attr="value"]
+*[attr|="value"]
+*[attr~="value"]
+*[attr*="value"](글자가 붙어 있을 때 찾을 수 있다.)
+*/
+
+/*순서가 중요하다.
+[class^=.container]라고 한다면 container로 시작되는 class를
+찾게 된다.
+글씨색은 상속이 되나 배경색은 상속이 되지 않는다.
+*/
+
+/*공백으로 구분되는단어가 일치할 때 선택(공백이 앞이건 뒤건 상건 없음)*/
+[class~="container"]{
+	border:1px dashed #cacaca;
+	padding:1em;
+}
+/*하이픈(-)으로 구분되는 단어가 일치할 때 선택*/
+[lang|="en"]{
+	text-decoration: underline;
+}
+
+/*
+* 상태 디자인(State Design) 선택자
+* 기본상태(Normal)
+* 커서가 올라간 상태(Hover)
+* 커서로 누른 상태(Active)
+*/
+
+/*기본 상태(Normal)*/
+. container p{
+	color: #84888a;
+	padding:0.88em;
+	background: #fff;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+/*커서가 올라간 상태(Hover)*/
+/*pseudo class: 가상(유사, 의사)클래스*/
+.container p:hover{
+	color: #0c0d0d;
+	background: #bfbfbf;
+}
+
+/*커서로 누른 상태(Active)*/
+.container p:active{
+	background-color:#000;
+	color:#fff;
+}
+
+/*
+하이퍼링크 (<a href>)
+상태디자인(State Design)
+가상(우사,의사)클래스
+Pseudo Class
+_____________________
+:link    | 기본상태
+:visited | 방문한 상태;(이미지 적용 노, 색상만 적용 가능)
+:hover   | 커서 올라간 상태;
+:active  | 커서로 누르고 있는 상태;
+:focus   | 키보드 포커싱 상태;
+*/
+
+a{
+	padding-left: 0.25px;
+	padding-right: 0.25px;
+	text-decoration: none;
+	color: #363636;
+	/*background-color: #ebebeb;*/
+}
+
+/*방문한 상태*/
+a:visited{
+	color: #fc414b;
+	/*background: #fff;*/
+	/*background-image: url("../images/visited.png");
+	background-position: 0.6px;*/
+}
+/*커서 올라간 상태*/
+a:hover{
+	/*text-decoration:underline;*/
+	/*display:inline-block;
+	margin-top:-5px;*/
+	padding-bottom: 1px;
+	border-bottom: 2px dotted; 
+}
+/*커서로 누른 상태*/
+a:active{
+	background: #ff0;
+}
+/*키보드 포커싱 상태*/
+a:focus{
+	outline: 3px solid #fc414b;
+}
+a:focus:focus{
+	outline-offset:10px;
+}
+
+/*box*/
+
+.box{
+	display: inline-block;
+	margin-bottom:20px;
+	margin-right:20px;
+	width:200px;
+	height:200px;
+	outline:none;
+	background:#efefef;
+}
+.box:hover{
+	outline:10px solid #fe4940;
+}
+
+/*.rounded-box*/
+.rounded-box{
+	width:200px;
+	background:#eee;
+}
+/*.rounded-box >* :first-child{}
+.rounded-box:first-child{}
+.wrapper:nth-child(2n-1) : 부모로부터 자신이 몇 번째인지 봐야 한다.*/
+
+:lang(ja){
+	/*일본어 사용*/
+}
+/*[lang|="en"]{}이 방법도 사용 가능함*/
+
+:lang(es){
+	/*스페인어 사용*/
+}
+
+/*가상(유사,의사) 요소
+* Pseud Element
+*
+*CSS2/2.1		  CSS 3+
+*:first-line   | ::first-line;
+*:first-letter | ::first-letter;
+*:before       | ::before;
+*:after        | ::after;
+
+*/
+
+/*잡지디자인 드롭캡(Dropcap)*/
+.dropcap-demo{
+	color:#ec0904;
+}
+/*dropcap span{
+	font-size:300%;
+	color:#ec0904;
+}*/
+
+
+/*가상으로 요소를 생성한다.*/
+.dropcap::first-letter {
+	font-size:300%;
+	color:#ec0904;
+	line-height:1;
+}
+.dropcap{
+	margin:0;
+}
+
+/*
+*가상요소
+* ::before
+* ::after
+*/
+
+abbr{
+	cursor:help;
+}
+
+
+/*.msg .before {
+	content: 'Hey!!';
+	color: #3a0099;
+}*/
+
+.msg::before {
+	content: 'Hey!!';
+	color: #3a0099;
+}
+
+
+.msg p::before {
+	content: 'designer'
+	color: #25a04d;
+}
+
+
+.msg .after,
+.msg::after {
+	content: 'Hand Up!';
+	color: #604887;
+}
+
+@media print{
+	/* 접근성 관점에서 링크의 주소를 출력하는 스타일 */
+	a::after {
+		/*함수: () 안에 전달하는 무엇을 통해 뭔가를 처리해서 결과를 보여준다.*/
+		content: '('attr(href)')';
+		color:#fc4a54;
+	}
+	abbr::after{
+		content: '('attr(title)')';
+	}
+}
+
+.parent*:not(a):not(p){
+	border: 1px solid #b64926;
+}
+
+
+/*
+*사용자가 커서로 클릭 후, 텍스트 블록을 
+*선택할 경우 가상으로 요소를 만들어 디자인 
+*/
+
+::selection{
+	background:#fc4b55;
+	color:#fff;
+	text-shadow: 2px 2px 8px #6300b5;
+}

@@ -1,0 +1,61 @@
+html{
+	font-size:100%;
+}
+
+body{
+	width:80vmax;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:1rem;
+	/*행간 설정*/
+	line-height:1.5rem;/** 1rem*1.5 = 16*1.5 **/
+	/*배경 이미지 삽입*/
+	background-image: url("../images/guide/leading-24px.png");
+}
+
+p{
+	margin-bottom:1.5rem;
+}
+img+p{
+	vertical-align:middle;
+}
+.small-caps{
+	font-variant:small-caps;
+}
+.upper-caps{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform:lowercase;
+}
+.capitalize{
+	text-transform:capitalize;
+}
+
+/*font 속기형 작성법*/
+.font-short-properties{
+	font: 1.2rem/2rem Helvetica, Sans-Serif;
+	font: italic 1.2rem/2rem Helvetica,Sans-Serif;
+	font: bold 1.2rem/2rem Helvetica, Sans-serif;
+	font: bold italic 1.2rem/2rem helvetica, Sans-Serif;
+	font: italic bold 1.2rem/2rem Helvetica, Sans-Serif;
+	font: ;
+}
+.spoqa{
+	font-family:spoqa-han-sans-kr;
+
+}
+table, th, td{
+	border: 1px solid f00;
+}
+.brand-tweetle{
+	overflow:hidden;
+	width:32px;
+	height:32px;
+	background-image: url("https://cdn4.iconfinder.com/data/icons/tweetle/rest_in_tweetle_peace.png");
+	background-repeat: no-repeat;
+	text-indent: -9999em;
+}
+.brand-tweetle a{
+	display: block;
+}

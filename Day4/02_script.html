@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>HTML 스크립트</title>
+   <!-- HTML 문서 내부에 Javascript를 바로 사용할 때-->
+   <!--script type="text/javascript">-->
+
+   <style>
+   .js body {background: #000;}
+   .no-js body {background: #f00;}
+   </style>
+  <!--  <script src="js/in-head-javascript.js"></script> -->
+
+   <!--//문서의 제목
+   //document.title ='동적으로 런타임 중에 문서의 제목을 변경';
+    //사용자에게 정보를 요구하다.
+    //window.prompt('네 정체는 무엇이냐?!', '사람')
+    //사용자에게 정보를 보여줒다.
+    //window.alert('벌써 저녁이네... 씁쓸')-->
+   <noscript>
+       <link rel=stylesheet href="css/alt-no-js-env.css">
+   </noscript>
+</head>
+<body>
+   <script src="js/check-support-js.js"></script>
+<!--script의 위치는 Head,Body 어디든 올 수 있지만 최상의 위치는 body사이에 오는 것이다-->
+<!--<script>
+    document.write('현재 사용자의 환경은 온라인입니까? ', window.navigator.online?'네. 온라인입니다.':'아니오. 오프라인입니다.');
+    setTimeout(function(){
+    document.write('<h1>This is Javascript</h1>')}, 3000);
+        
+</script>  -->
+      
+    <!-- <script src="js/in-body-javascript.js"></script>    -->
+    
+    <noscript><p>자바스크립트가 지원되지 않는 환경입니다!</p></noscript>
+</body>
+</html>

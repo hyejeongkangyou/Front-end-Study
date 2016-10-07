@@ -1,0 +1,67 @@
+/*
+* .lecture
+*/
+.lecture ul {
+	/*기본적인 리스트 스타일 초기화*/
+	/*정말 많이 사용되는 코드*/
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.demo ul{
+ list-style-type: none;
+ padding-left: 0;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+/*.lecture ul, .demo ul{
+ list-style-type: none;
+ padding-left: 0;
+ margin-top: 0;
+ margin-bottom: 0;
+}*/
+/*
+.reset-list ul,
+.reset-list ol{
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}*/
+
+/*
+* 파일 타입 이미지 제공을 위한 기본 디자인
+*/
+.lecture-file-list a{
+	display: block;
+	font-size:2.38em;
+	text-decoration:none;
+	text-indent: 40px;
+	background-repeat: no-repeat;
+}
+
+/*
+파일 포멧에 따라 자동적으로 아이콘을
+배경이미지로 설정하는 스타일
+*/
+
+a[href$=".psd"] {
+	background-image: url("../images/psd.png");
+}
+a[href$=".ai"] {
+	background-image: url("../images/ai.png");
+}
+a[href$=".pdf"] {
+	background-image: url("../images/pdf.png");
+}
+a[href$=".doc"] {
+	background-image: url("../images/doc.png");
+}
+}
+a[href^="http://"][target="_blank"] {
+	background-image: url("../images/external-link.png");
+	background-position: 0.6px;
+}

@@ -1,0 +1,167 @@
+body{
+	margin: 0;
+	height:100vh;
+	background: url("../images/momentum-image.jpg") no-repeat center center;
+	background-size: cover;
+	font-family: Helvetica Neue;
+	overflow: hidden;
+	font-weight: 500;
+}
+
+[class$="-box"]{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background: hsla(0, 50%, 100%, 0.3);
+}
+
+.utility-box{
+	top:0;
+	left:0;
+	padding:15px 20px;
+}
+
+.utility-box p{
+	float:left;
+	margin-top:5px;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+/*.utility-box p::after{
+	position: relative;
+	left: 25%;
+	content: url(../images/search.svg);
+}*/
+
+.utility-box .search{
+	font-size: 14px;
+	background:transparent;
+	border:none;
+	outline:none;
+	float: right;
+	width: 120px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.utility-box .search:hover,
+.utility-box .search:focus{
+	border-bottom: 2px solid black;
+}
+
+.utility-box .search .fa-search{
+	line-height: 1;
+}
+
+.weather-box{
+	top:0;
+	right:0;
+	font-size:1.2em;
+	text-transform: uppercase;
+
+}
+
+.weather-box img{
+	height: 20px;
+	float:left;
+	margin-left:120px;
+	margin-top:18px;
+}
+
+.weather-box p{
+	float:right;
+	margin-right: 25px;
+}
+
+.weather-box span{
+	float: right;
+	margin-right:-33px;
+	font-size: 10px;
+}
+
+.todo-box{
+	bottom:0;
+	right:0;
+	text-align:center;
+	line-height:80px;
+}
+
+.todo-box p{
+		transform: translate(35%,25%);
+}
+
+.todo-box a{
+	text-decoration:none;
+	color:black;
+
+}
+
+
+
+.info-box{
+	left:0;
+	bottom:0;
+}
+
+
+.quote-box{
+	bottom:0;
+	left:50%;
+	width:50%;
+	height:50px;
+	/*margin-left:-25%;*/
+	transform:translateX(-50%);
+}
+
+.clock-box{
+	width:50%;
+	bottom:40%;
+	height: 200px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.clock-box p{
+	float: left;
+	margin-top:0;
+	margin-left:25%;
+	font-size: 120px;
+
+}
+
+.clock-box span{
+	position:absolute;
+	top: 65%;
+	left:15%;
+	font-size: 2.5em;
+}
+
+.question-box{
+	width:50%;
+	bottom:25%;
+	height: 100px;
+	left:50%;
+	transform:translate(-50%, 15%);
+}
+
+.question-box p{
+	font-size: 2em;
+	margin-left: 90px;
+	margin-top: 5px;
+}
+
+.question-box .question{
+	width: 500px;
+    height: 30px;
+    top: -10%;
+    margin-left: 55px;
+    outline: none; 
+    font-size: 2em;
+    border:none;
+    border-bottom: 3px solid black;
+    background: transparent;
+    transform: translateY(-45%);
+    text-align:center;
+}
+

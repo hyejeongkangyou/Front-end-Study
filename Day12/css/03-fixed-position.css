@@ -1,0 +1,48 @@
+body{
+	font-family: "Spoqa Han Sans";
+	font-weight:200;
+	background: linear-gradient(-45deg, transparent 50%, hsla(0,50%,0%,0.5) 50%, transparent 52%),   
+	linear-gradient(45deg, transparent 50%, hsla(0,50%,0%,0.5) 51%, hsla(0, 0%, 0%, 0) 52%),   
+	radial-gradient(circle at center 20%, transparent, #562b2b),
+	url("../images/rain city.jpeg") no-repeat center;
+	background-size: 30px 30px, 30px 30px, 100%, cover;
+	color: #fff;
+}
+
+::selection{
+	background: hsla(197, 79%, 13%, 0.7);
+	color: #fff;
+	text-shadow: none;
+}
+
+/*::-moz-selection{
+	background: hsla(197, 79%, 13%, 0.7);
+	color: #fff;
+	text-shadow: none;
+}*/
+
+#page-header-bar{
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	padding:0.7em 0 1.7em;
+	background: linear-gradient(180deg, rgb(103, 120, 134), hsla(0, 0%, 0%, 0.42));
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0 8px 10px rgba(23,22,22,0.2);
+}
+
+#page-footer-bar{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.42), rgba(0, 0, 0, 0.67));
+	text-align: center;
+	padding: .3em;
+}
+
+#page-footer-bar h4{
+	margin-bottom: 0;
+}

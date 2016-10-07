@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS 테두리 디자인</title>
+	<style>
+	.box{
+		/*display:table-cell;*/
+		text-align:center;
+		/*vertical-align:middle;*/
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		color: #50c0fd;
+		/*border short properties*/
+		border: 10px solid;
+		border-bottom-color:transparent;
+	}
+
+	.border-solid{border-right-style: solid;}
+	.border-dashed{border-right-style: dashed;}
+	.border-dotted{border-right-style: dotted;}
+
+	.nanum{
+		font-family: "Apple SD Gothic Neo", "Nanum Gothic", "나눔 고딕", 돋움, Dotum, Sans-Serif;
+	}
+	</style>
+</head>
+
+
+<body class="nanum">
+	<div class="box border-solid">SOLID</div>
+	<div class="box border-dashed">DASHED</div>
+	<div class="box border-dotted">DOTTED</div>
+
+
+
+</body>
+</html>

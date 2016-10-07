@@ -1,1 +1,7 @@
-# Front-end-Study
+## Frontend Study
+
+#### HTML/CSS
+#### SASS
+#### JavaScript
+#### Angular
+#### Others

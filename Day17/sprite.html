@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Sprite exercise</title>
+</head>
+<style>
+	.sprite-exercise-mario{
+		border:1px solid #999;
+		height: 50px;
+		width: 38px;
+		background: url("css-sprite-animation-steps-mario.png");
+		animation: ogleogle steps(26) 1s infinite;}
+
+	@keyframes ogleogle{
+		0% {background-position-x:0;}
+		100%{background-position-x: -1042px;}
+	}
+
+
+
+	.sprite-exercise-kyaku{
+		margin-top:30px;
+		border: 1px solid #999;
+		height: 110px;
+		width: 70px;
+		background: url("css-sprite-animation-steps-ken-tatsumaki-senpuu-kyaku.png");
+		animation: ogijogi steps(12) 1s infinite;
+
+	}
+
+	@keyframes ogijogi{
+		0% {background-position-x:0;}
+		100%{background-position-x: -840px;}
+		/* 910(총 면적) - 70(1 column) = 840 */
+	}
+
+
+	.sprite-exercise-penguin{
+		margin-top: 30px;
+		border: 1px solid #999;
+		height:102px;
+		width: 103px;
+		background: url(css-sprite-animation-steps-penguin.png);
+		animation: yogiyo steps(9) 1s infinite;
+	}
+	
+	@keyframes yogiyo{
+		0%{background-position: 0;}
+		100%{background-position: -921px;}
+	}
+
+	
+	.sprite-exercise-adam{
+		margin-top: 30px;
+		border: 1px solid #999;
+		width: 120px;
+		height: 182px;
+		background: url("css-sprite-animation-steps-adam.png");
+		animation: wow steps(7) 1s infinite;
+
+	}
+
+	@keyframes wow{
+		0%{background-position:0;}
+		100%{background-position: -840px;}
+	}
+
+	.sprite-exercise-fox{
+		margin-top:30px;
+		border: 1px solid #999;
+		width:156px;
+		height:156px;
+		background: url("css-sprite-animation-steps-foxtail.png");
+		background-color: blue;
+		animation: fox steps(44) 1s infinite;
+	}
+
+	@keyframes fox{
+		0%{background-position: 0;}
+		100%{background-position: -6864px;}
+	}
+
+	.sprite-exercise-ken{
+		margin-top:30px;
+		border:1px solid #999;
+		width:70px;
+		height:110px;
+		background: url("css-sprite-animation-steps-ken-shoryuken.png");
+		animation: kenken steps(6) 0.5s infinite;
+	}
+	
+	@keyframes kenken{
+		0%{background-position: 0;}
+		100%{background-position: -420px;}
+	}
+
+	.sprite-exercise-cat{
+		margin-top: 30px;
+		border: 1px solid #999;
+		width: 399px;
+		height: 199px;
+		background: url("css-sprite-animation-steps-rachel.png");
+		animation: cat steps(11) 0.9s infinite; 
+	}
+
+	@keyframes cat{
+		0%{background-position: 0 0;}
+		100%{background-position: 0 -2194px;}
+	}
+
+
+</style>
+
+
+
+<body>
+	
+<div class="sprite-exercise-mario"></div>
+<div class="sprite-exercise-kyaku"></div>
+<div class="sprite-exercise-penguin"></div>
+<div class="sprite-exercise-adam"></div>
+<div class="sprite-exercise-fox"></div>
+<div class="sprite-exercise-ken"></div>
+<div class="sprite-exercise-cat"></div>
+
+
+</body>
+</html>

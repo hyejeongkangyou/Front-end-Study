@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>반응형 그리드 시스템</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../resources/initialization/common.css">
+	<link rel="stylesheet" href="../resources/initialization/normalize.css">
+	<link rel="stylesheet" href="../resources/grid-system/grid-responsive.css">
+
+	<style>
+		.container section {box-sizing:border-box; color:#fff; height: 100vh; padding:1.5rem;}
+		.container section:nth-child(1){background: #aea28f;}
+		.container section:nth-child(2){background: #88a07c;}
+		.container section:nth-child(3){background: #9e807c;}
+		.container .headline { margin-top: 0; margin-bottom: 0;}
+
+
+@media (min-width:600px) {
+	.container section{float:left; width:50%;}
+	.container section:nth-child(2),
+	.container section:nth-child(3){height:50vh;}
+	
+}
+
+@media (min-width:900px) {
+	.container section{width:33.3333%;}
+	.container section:nth-child(2),
+	.container section:nth-child(3){height: 100vh;}
+}
+
+	</style>
+</head>
+
+<div class="container">
+	<section class="unit-s-1-2 unit-m-1-2 unit-l-1-3">
+		<h2 class="headline">Headline1</h2>
+	</section>
+	<section class="unit-s-1-2 unit-m-1-2 unit-l-1-3">
+		<h2 class="headline">Headline2</h2>
+	</section>
+	<section class="unit-m-1-2 unit-l-1-3">
+		<h2 class="headline">Headline3</h2>
+	</section>
+</div>
